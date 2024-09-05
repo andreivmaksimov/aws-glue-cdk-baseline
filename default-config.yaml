@@ -1,21 +1,17 @@
 pipelineAccount:
-  awsAccountId: 123456789101
+  awsAccountId: 975050368328
   awsRegion: us-east-1
 
 devAccount:
-  awsAccountId: 123456789102
+  awsAccountId: 992382736109
   awsRegion: us-east-1
 
 prodAccount:
-  awsAccountId: 123456789103
+  awsAccountId: 975050168644
   awsRegion: us-east-1
 
 dev:
-  jobs:
-    ProcessLegislators:
-      inputLocation: s3://awsglue-datasets/examples/us-legislators/all/persons.json
+  dataLocation: s3://dev-glue-data-992382736109-us-east-1
 
 prod:
-  jobs:
-    ProcessLegislators:
-      inputLocation: s3://awsglue-datasets/examples/us-legislators/all/persons.json
+  dataLocation: s3://prod-glue-data-975050168644-us-east-1

@@ -14,3 +14,7 @@ class GlueAppStage(cdk.Stage):
     @property
     def iam_role_arn(self):
         return self.glue_app_stack.iam_role_arn
+
+    @property
+    def cross_account_role_arn(self):
+        return self.glue_app_stack.cross_account_role_arn
